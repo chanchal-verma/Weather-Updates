@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerLinks}}
+</head>
+
+<body>
+
+    {{>header}}
+
+    <form action="">
+        <input type="text" id="searchCity" placeholder="Enter your City Here" autocomplete="off">
+        <input type="submit" id="submitButton" value="search">
+    </form>
+
+    <div class="container weatherCard">
+        <div class="row">
+            <div class="col">
+                <div class="card text-center" style="width: 20rem;">
+                    <div class="card-header">
+                        <span id="currentDate"></span>
+                        <span id="currentTime"></span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title" id="place"></h3>
+                        <div id="WeatherCon"></div>
+                        <p class="card-text" id="min_maxTemp"></p>
+                    </div>
+                    <div class="card-footer">
+                        <h1  id="Temperature"></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{>footer}}
+
+
+<script src="/js/script.js"></script>
+</body>
+
+</html>
